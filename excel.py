@@ -16,6 +16,9 @@ s = pd.Series([1, 3, 5, np.nan, 6, 8])
 
 dates = pd.date_range('20130101', periods=6)
 
+# np.random.randn(6, 4) 生成6x4数组，元素为-1~1之间
+# index 横列头
+# columns 竖列头
 df = pd.DataFrame(np.random.randn(6, 4), index=dates, columns=list('ABCD'))
 
 df2 = pd.DataFrame({'A': 1.,
